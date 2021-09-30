@@ -1,0 +1,7 @@
+.lineGradient{
+    height: 7px;
+}
+.lineText{
+    display: flex;
+    justify-content: space-between
+}

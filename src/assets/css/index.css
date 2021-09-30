@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+}
+
+
+#root{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+
+

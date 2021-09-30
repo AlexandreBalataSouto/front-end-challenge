@@ -1,0 +1,18 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerLine{
+    width: 100%;
+}
+
+.lineColor{
+    height: 7px;
+}
+
+.lineColorText{
+   text-align: center;
+}
+

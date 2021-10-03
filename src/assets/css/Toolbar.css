@@ -1,3 +1,4 @@
+/*Toolbar style and layout*/
 .Toolbar-Component{
   margin: 4%;
 }
@@ -39,24 +40,27 @@
 .iconGroup .tooltip img{
   max-width: 60%;
 }
+/*END Toolbar style and layout*/
 
-.accordion__content {
+/*Accordion effect*/
+.accordionContent {
   overflow: hidden;
   background-color: white;
   transition: max-height 0.6s ease;
 }
 
-.arrow-Down{
+.arrowDown{
   transition: transform 0.6s ease;
 }
 
 .rotate {
   transform: rotate(-180deg);
 }
+/*END Acordion effect*/
 
+/*Tooltip style and layout*/
 .tooltip {
   position: relative;
-  display: inline-flex;
 }
 
 .tooltip .tooltiptext {
@@ -88,3 +92,5 @@
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+/*END Tooltip style and layout*/

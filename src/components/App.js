@@ -14,7 +14,7 @@ class App extends React.Component {
       data: []
     };
   }
-
+  //Get data only once
   componentDidMount() {
     fetch("https://raw.githubusercontent.com/Vizzuality/front-end-code-challenge/master/data.json")
       .then(res => res.json())
@@ -46,6 +46,7 @@ class App extends React.Component {
       return <div>Loading...</div>;
     } else {
 
+      //Split the data into my three variables based on the ID´s
       for (const key in data) {
         if (data[key].id == "2a022fc2-bfed-477e-9a16-75a1fb594620") {
           basicItem = data[key];
@@ -59,10 +60,11 @@ class App extends React.Component {
       }
 
       return (
-        <article className="App">
-          <Toolbar data={basicItem} contentComponent={<Basic data={basicItem} />} />
-          <Toolbar data={choroplethItem} contentComponent={<Choropleth data={choroplethItem} />} />
-          <Toolbar data={gradientItem} contentComponent={<Gradient data={gradientItem} />} />
+        <article className="App">{/*Main parent component */}
+          {/*Set Toolbar three times, each one we pass the variables with the data*/}
+          <Toolbar name={basicItem.name} description={basicItem.description} contentComponent={<Basic data={basicItem} />} />
+          <Toolbar name={choroplethItem.name} description={choroplethItem.description} contentComponent={<Choropleth data={choroplethItem} />} />
+          <Toolbar name={gradientItem.name} description={gradientItem.description} contentComponent={<Gradient data={gradientItem} />} />
         </article>
       );
     }

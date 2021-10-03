@@ -6,6 +6,7 @@ function Basic(props) {
         <section className="Basic-Component">
             <div>
                 <ul>
+                    {/*Iterate the data to render the HTML list */}
                     {props.data.items.map(subItem => {
                         return (
                             <div>
@@ -17,8 +18,8 @@ function Basic(props) {
                     })}
                 </ul>
             </div>
-        </section>)
-
+        </section>
+    )
 }
 
 export default Basic;

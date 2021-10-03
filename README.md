@@ -1,3 +1,38 @@
+# My aproach
+Hello, first of all I want to let you know that my knowledge with React is basic, although I develop this fronted app with the idea of being efficient and correct in relation to design and architecture of React.
+
+## App component
+My aproach was to create a main parent component that contains a Toolbar component that it set three times and recives as props the "name", the "description" and one of the three content components (Basic, Choropleth or Gradient). Before this I get the data and split into three variables (basicItem, choroplethItem, gradientItem).
+
+## Toolbar component
+Props:
+- `name`: The title of the Toolbar which gets from the property "name"
+- `description`: The description that is render in the Modal component which gets from the property "description"
+- `contentComponent`: The content of one of three components, at the same time this components receives the data of one the three variables 
+
+We can split this component into three parts:
+- `navbar`: Here is where I set the title of the toolbar with the prop "name" and the icons that I use as buttons (info button, visibility button and collapse button).
+- `contentComponent`: Here is a div tag with the className "accordionContent", inside of this div I render the content of my components (Basic, Choropleth or Gradient).
+- `Modal component`: At the end is a Modal component that I use to display the prop "description"  
+
+## Basic component
+Props:
+- `data`: Gets the data of the variable "basicItem"
+
+This component render the HTML content with the data of "basicItem"
+
+## Choropleth component
+Props:
+- `data`: Gets the data of the variable "choroplethItem"
+
+This component render the HTML content with the data of "choroplethItem"
+
+## Gradient component
+Props:
+- `data`: Gets the data of the variable "gradientItem"
+
+This component render the HTML content with the data of "gradientItem". In order to render the grandient effect I create a string variable (myStyle) that contians the style and I pass this variable into a object "styleObject" with a property "background".
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

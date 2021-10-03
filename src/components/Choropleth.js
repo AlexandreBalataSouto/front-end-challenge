@@ -5,6 +5,7 @@ function Choropleth(props) {
     return (
         <section className="Choropleth-Component">
             <div className="container">
+                {/*Iterate the data to render the HTML list */}
                 {props.data.items.map(subItem => {
                     return (
                         <div className="containerLine">
